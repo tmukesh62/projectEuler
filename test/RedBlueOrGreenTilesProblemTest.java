@@ -8,7 +8,7 @@ public class RedBlueOrGreenTilesProblemTest {
 	@Test(expectedExceptions = InvalidInputException.class)
 	public void testRedBlueOrGreenTilesInvalidInput() throws InvalidInputException {
 		// setup
-		final RedBlueOrGreenTilesProblem redBlueOrGreenTilesProblem = new RedBlueOrGreenTilesProblem(-1);
+		final RedBlueOrGreenTilesProblem redBlueOrGreenTilesProblem = new RedBlueOrGreenTilesProblem(-50);
 		
 		// execute
 		redBlueOrGreenTilesProblem.execute();
