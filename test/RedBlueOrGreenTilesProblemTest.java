@@ -6,7 +6,7 @@ import static org.testng.Assert.*;
 public class RedBlueOrGreenTilesProblemTest {
 	
 	@Test(expectedExceptions = InvalidInputException.class)
-	public void testRedBlueOrGreenTiles() throws InvalidInputException {
+	public void testRedBlueOrGreenTilesInvalidInput() throws InvalidInputException {
 		// setup
 		final RedBlueOrGreenTilesProblem redBlueOrGreenTilesProblem = new RedBlueOrGreenTilesProblem(-1);
 		
