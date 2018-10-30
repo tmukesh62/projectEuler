@@ -36,7 +36,14 @@ public class RedBlueOrGreenTilesProblem extends ProjectEulerProblem {
 	 */
 	@Override
 	void validateInput() throws InvalidInputException {
-		// nothing to be done here
+		System.out.println("Validating the input number of black tiles " + _numberOfBlackTiles);
+		
+		if (_numberOfBlackTiles < 0) {
+			System.out.println("Invalid input: Number of black tiles has to be greater than or equal to zero.");
+			throw new InvalidInputException("Number of black tiles has to be greater than or equal to zero.");
+		}
+		
+		System.out.println("Input is valid.");
 	}
 
 	/**

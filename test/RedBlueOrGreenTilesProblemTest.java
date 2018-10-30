@@ -5,6 +5,15 @@ import static org.testng.Assert.*;
 
 public class RedBlueOrGreenTilesProblemTest {
 	
+	@Test(expectedExceptions = InvalidInputException.class)
+	public void testRedBlueOrGreenTiles() throws InvalidInputException {
+		// setup
+		final RedBlueOrGreenTilesProblem redBlueOrGreenTilesProblem = new RedBlueOrGreenTilesProblem(-1);
+		
+		// execute
+		redBlueOrGreenTilesProblem.execute();
+	}
+	
 	@Test(dataProvider = "inputToRedBlueOrGreenTiles")
 	public void testRedBlueOrGreenTiles(int numberOfBlackTiles, long expectedTotalNumberOfWays) throws InvalidInputException {
 		// setup
